@@ -1,4 +1,7 @@
-.header {
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+.header, footer {
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
@@ -30,4 +33,23 @@ a {
     font-size: 24px;
     color: #f9FAF8;
 
+}
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.quotes {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+.action {
+    background-color: #3882F6;
+
+}
+button {
+    background-color: #3882F6;
 }
