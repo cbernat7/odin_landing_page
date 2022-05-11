@@ -1,10 +1,22 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+
+    
+   
 }
 .header, footer {
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
+    
+}
+
+.header, footer, .box-section, .quotes, .action {
+    padding: 0px 100px;
 }
 .top-header {
     display: flex;
@@ -20,24 +32,63 @@ h1 {
     color: #f9FAF8;
     font-weight: 1000;
 }
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .header ul {
     list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    
 }
 a {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+    
+}
+.header-img {
+    object-fit: contain;
+    max-width: 300px;
+    align-self: flex-end;
+    justify-self: center;
+ 
+}
+.left {
+    justify-self: flex-start;
+}
+
+.info > img {
+    object-fit: contain;
+    max-width: 200px;
+    box-shadow: 2px 1px 5px black;
 }
 .logo {
     font-size: 24px;
     color: #f9FAF8;
 
 }
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+.info {
+    width: 200px;
+    height: 200px;
+}
 h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    text-align: center;
 }
 .quotes {
     background-color: #E5E7EB;
@@ -52,4 +103,6 @@ h2 {
 }
 button {
     background-color: #3882F6;
+    width: 100px;
+    padding: 5px 0 ;
 }
