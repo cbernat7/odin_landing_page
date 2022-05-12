@@ -16,7 +16,7 @@ body {
 }
 
 .header, footer, .box-section, .quotes, .action {
-    padding: 0px 100px;
+    padding: 0px 300px;
 }
 .top-header {
     display: flex;
@@ -36,10 +36,18 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .header ul {
     list-style: none;
+    
+}
+.header ul li {
+    border:#f9FAF8 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+
 }
 
 ul {
@@ -54,15 +62,23 @@ a {
     color: #E5E7EB;
     
 }
+.bottom-header{
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+    
+}
 .header-img {
     object-fit: contain;
     max-width: 300px;
-    align-self: flex-end;
-    justify-self: center;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px black;
+    
  
 }
 .left {
-    justify-self: flex-start;
+    margin-right: 50px;
 }
 
 .info > img {
@@ -76,6 +92,10 @@ a {
     font-size: 24px;
     color: #f9FAF8;
 
+}
+.box-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .boxes {
     display: flex;
@@ -99,16 +119,38 @@ h2 {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quotes :nth-child(2){
+    font-size: 18px;
+    text-align: right;
 }
 .action {
     background-color: #3882F6;
-    padding-bottom: 20px;
+    padding: 20px 100px;
+    display: flex;
+    min-height: 200px;
+    justify-content: space-between;
+    margin: 50px 300px;
+    border-radius: 10px;
+    
+   
 
+
+}
+.action > p {
+    
+    align-self: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 button {
     background-color: #3882F6;
     color: #E5E7EB;
     width: 100px;
+   
     padding: 5px 0 ;
     font-weight: 900;
     border-radius: 5px;
@@ -121,9 +163,14 @@ button {
 .secondButton {
     border-color:  #f9FAF8;
     border-style: solid;
+    height: 29px;
+    align-self: center;
+    padding: 5px;
+    min-width: fit-content;
 
 }
 footer {
     padding: 20px 20px 10px 20px;
+    text-align: center;
 
 }
